@@ -20,6 +20,7 @@ import com.lti.booking.pojo.Busseats;
 import com.lti.booking.pojo.Customer;
 import com.lti.booking.pojo.MyFeedback;
 import com.lti.booking.pojo.MyProfile;
+import com.lti.booking.pojo.contactus;
 import com.lti.booking.pojo.signup;
 import com.lti.booking.service.BookingService;
 
@@ -48,6 +49,13 @@ public class BookingController {
 		public boolean adminvalidateLogin(@PathVariable("logid") String id,@PathVariable("passwd") String pass)
 		{
 		return aService.adminvalidateLogin(id, pass);
+		}
+//contact-us
+		@PostMapping("/contactus")
+		public boolean mycontactus(@RequestBody contactus contactus) 
+		{
+			return aService.mycontactus(contactus);
+			
 		}
 		
 //search Bus

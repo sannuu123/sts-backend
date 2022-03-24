@@ -15,6 +15,7 @@ import com.lti.booking.pojo.Busseats;
 import com.lti.booking.pojo.Customer;
 import com.lti.booking.pojo.MyFeedback;
 import com.lti.booking.pojo.MyProfile;
+import com.lti.booking.pojo.contactus;
 import com.lti.booking.pojo.signup;
 
 
@@ -39,6 +40,12 @@ public boolean validateLogin(String logid, String pass)
 @Override
 public boolean adminvalidateLogin(String logid, String pass) {
 return bdao.adminvalidateLogin(logid, pass);
+}
+//contact-us
+@Override
+public boolean mycontactus(contactus contactus) {
+	
+	return bdao.mycontactus(contactus);
 }
 
 //Search Bus

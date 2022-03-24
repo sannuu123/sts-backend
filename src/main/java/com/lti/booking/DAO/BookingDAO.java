@@ -9,6 +9,7 @@ import com.lti.booking.pojo.Busseats;
 import com.lti.booking.pojo.Customer;
 import com.lti.booking.pojo.MyFeedback;
 import com.lti.booking.pojo.MyProfile;
+import com.lti.booking.pojo.contactus;
 import com.lti.booking.pojo.signup;
 
 public interface BookingDAO {
@@ -16,7 +17,7 @@ public interface BookingDAO {
 	public boolean mysignup(signup signup);//Signup
 	public boolean validateLogin(String logid,String pass);//Login
 	public boolean adminvalidateLogin(String logid,String pass);//Admin login
-	
+	public boolean mycontactus(contactus contactus); //contactus
 	
 	public boolean addBus(Bus bus);
 	public List<Bus> getBus();

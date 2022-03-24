@@ -16,6 +16,7 @@ import com.lti.booking.pojo.Customer;
 import com.lti.booking.pojo.Login;
 import com.lti.booking.pojo.MyFeedback;
 import com.lti.booking.pojo.MyProfile;
+import com.lti.booking.pojo.contactus;
 import com.lti.booking.pojo.signup;
 
 
@@ -65,6 +66,13 @@ public class BookingDAOImpl implements BookingDAO{
 	else
 	return false;
 
+	}
+//contact-us
+	@Override
+	public boolean mycontactus(contactus contactus) 
+	{
+		eMan.persist(contactus);
+		return true;
 	}
 	
 //Search Bus
